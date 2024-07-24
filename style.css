@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-box {
+    background-color: #dbe6e8be;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.chat-messages {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+div {
+    margin-bottom: 10px;
+    color: #000;
+    border: #4CAF50;
+    border-radius: 0cqmax;
+    background-color: #5994bfdb
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #f4f3f5;
+    font-family: monospace;
+    
+}
+
+img {
+ border-radius: 7cqmax;
+ padding: 5px;
+ margin-bottom: 10px;
+ margin-left: 80px;
+/* Apply styles to the navbar */
+.navbar {
+    background-color: #343a40; /* Navbar background color */
+  }
+  
+  /* Style the navbar brand */
+  .navbar-brand {
+    color: #ffffff; /* Brand text color */
+  }
+  
+  /* Style the navbar links */
+  .navbar-nav .nav-link {
+    color: #ffffff; /* Navbar link text color */
+  }
+  
+  /* Style the dropdown content */
+  .dropdown-content {
+    display: none; /* Hide dropdown content by default */
+    position: absolute;
+    background-color: #343a40; /* Dropdown background color */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Dropdown box shadow */
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    color: #ffffff; /* Dropdown link text color */
+    padding: 12px 16px; /* Dropdown link padding */
+    display: block;
+  }
+  
+  /* Change background color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #555; /* Hover background color */
+  }
+  
+  /* Show the dropdown content when hovering over the dropdown link */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

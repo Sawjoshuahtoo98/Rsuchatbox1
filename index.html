@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>To-Do List</title>
+</head>
+<body>
+  <div> <center><h1>RSU CHAT BOX</h1></center>
+  </div>
+  <img src="https://i0.wp.com/www.rsuip.org/wp-content/uploads/2023/09/1.jpg" alt= "Rangsit logo" />
+    <div class="container1">
+        <h1 class="title">Digital Clock</h1>
+        <div class="digital-clock" id="digital-clock"></div>
+      </div>
+  <div class="container">
+    <h1 class="title">To-Do List</h1>
+    <form class="add-task-form">
+      <input type="text" class="add-task-input" id="add-task-input" placeholder="Add a new task...">
+      <button type="submit" class="add-task-button">Add Task</button>
+    </form>
+    <ul class="task-list"></ul>
+  </div>
+  
+  
+  <br>
+
+  <div class="chat-container">
+    <div class="chat-box" id="chat-box">
+        <div class="chat-messages" id="chat-messages"></div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+<script type="importmap">
+  {
+    "imports": {
+      "@google/generative-ai": "https://esm.run/@google/generative-ai"
+    }
+  }
+</script>
+<script type="module">
+  import { GoogleGenerativeAI } from "@google/generative-ai";
+
+  // Fetch your API_KEY
+  const API_KEY = "AIzaSyC3RqI24-4nJijoDTVMBqrg9aYwgG4coZ8";
+
+  // Access your API key (see "Set up your API key" above)
+  const genAI = new GoogleGenerativeAI(API_KEY);
+
+  // ...
+
+  window.model = genAI.getGenerativeModel({ model: "gemini-pro"});
+
+  // ...
+</script>
+
+
+
+  <script src="experiments.js"></script>
+</body>
+
+</html>
